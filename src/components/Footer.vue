@@ -1,0 +1,34 @@
+<template>
+  <div class="footer-container">
+    <p>
+      Designed & Developed By
+      <a target="_blank" href="https://www.linkedin.com/in/nijinnazar/">
+        Nijin Nazar.
+      </a>
+      Thanks To
+      <a target="_blank" href="https://www.linkedin.com/in/madhavbahl/">
+        Madhav Bahl
+      </a>
+      &
+      <a target="_blank" href="https://www.youtube.com/user/projectevening">
+        The Lean Programmer
+      </a>
+    </p>
+  </div>
+</template>
+
+<style>
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #dcd4fce0;
+  color: #0f1228;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+p > a {
+  text-decoration: none;
+}
+</style>

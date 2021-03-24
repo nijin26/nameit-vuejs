@@ -2,7 +2,7 @@
   <div class="search-container">
     <input
       v-model="keywordInput"
-      @input="onChange()"
+      @change="onChange()"
       type="text"
       placeholder="Type Keyword"
       class="search-input"

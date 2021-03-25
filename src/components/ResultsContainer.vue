@@ -45,8 +45,8 @@ export default {
 }
 
 .namecard {
-  color: #e7e9f0;
-  background-color: #282d4f;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
   margin: 10px 15px;
   min-width: 75px;
   padding: 10px 20px;

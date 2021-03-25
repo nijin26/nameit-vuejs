@@ -37,14 +37,14 @@ export default {
   font-size: 15px;
   width: 250px;
   border-width: 0;
-  background-color: #a592f2;
-  color: #e7e9f0;
+  background-color: var(--primary-color);
+  color: var(--font-color);
   border-radius: 50px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .search-input::placeholder {
-  color: #e7e9f0;
+  color: var(--font-color);
 }
 
 .search-input:focus {

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Switch />
     <Header :headerChange="headerChange" />
     <SearchBox @on-change-event="updateHeaderStatus" />
     <ResultsContainer :suggestedName="suggestedNames" />
@@ -15,6 +16,7 @@ import Header from "./Header.vue";
 import SearchBox from "./SearchBox.vue";
 import ResultsContainer from "./ResultsContainer.vue";
 import Footer from "./Footer.vue";
+import Switch from "./Switch.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Footer,
     SearchBox,
     ResultsContainer,
+    Switch,
   },
 
   setup() {
@@ -41,13 +44,16 @@ export default {
 </script>
 
 <style>
+@import "../assets/colors.css";
+
 body {
   margin: 0;
   padding: 0;
-  background: #0f1228;
+  background: var(--bg-color);
   overflow-x: hidden;
-  color: #e7e9f0;
+  color: var(--font-color);
   font-family: "Lato", sans-serif;
+  transition: all 1s;
 }
 
 .container {

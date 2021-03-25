@@ -2,13 +2,14 @@
   --primary-color: #a592f2;
   --secondary-color: #282d4f;
   --font-color: #f0f1f5;
+  --head-color: white;
   --bg-color: #0f1228;
 }
 
 [data-theme="dark"] {
   --primary-color: #282d4f;
   --secondary-color: #5841b4;
-  --head-color: black;
+  --head-color: #282d4f;
   --font-color: white;
   --bg-color: rgba(229, 213, 248, 0.61);
 }

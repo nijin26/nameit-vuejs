@@ -56,7 +56,7 @@ export default {
 .head-text {
   font-family: "Hachi Maru Pop", cursive;
   margin: 5px 0 15px 0;
-  transition: all 1s;
+  transition: all 0.7s;
   color: var(--head-color);
 }
 

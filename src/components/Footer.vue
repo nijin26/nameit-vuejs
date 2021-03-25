@@ -5,14 +5,6 @@
       <a target="_blank" href="https://www.linkedin.com/in/nijinnazar/">
         Nijin Nazar.
       </a>
-      Thanks To
-      <a target="_blank" href="https://www.linkedin.com/in/madhavbahl/">
-        Madhav Bahl
-      </a>
-      &
-      <a target="_blank" href="https://www.youtube.com/user/projectevening">
-        The Lean Programmer
-      </a>
     </p>
   </div>
 </template>

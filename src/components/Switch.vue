@@ -47,7 +47,7 @@ export default {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #a592f2;
   bottom: 0;
   cursor: pointer;
   left: 0;

@@ -31,9 +31,11 @@ export default {
     const headerChange = ref(true);
     const keyword = ref("");
     const suggestedNames = ref([]);
+    const timeout = ref(null);
 
     const updateHeaderStatus = (key) => {
-      headerChange.value = !headerChange.value;
+      if (key === "") headerChange.value = true;
+      else headerChange.value = false;
       keyword.value = key;
       suggestedNames.value = keyword.value ? name(keyword.value) : [];
     };

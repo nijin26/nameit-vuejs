@@ -1,6 +1,7 @@
 {
   "name": "name-it",
   "version": "0.0.0",
+  "homepage": "https://github.com/nijin26/nameit-vuejs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

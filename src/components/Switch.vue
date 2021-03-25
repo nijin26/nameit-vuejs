@@ -13,11 +13,23 @@ export default {
   setup() {
     const checked = ref(false);
     const toggleSwitch = ref(null);
+    const currentTheme = ref("");
+
+    onMounted(() => {
+      currentTheme.value = localStorage.getItem("theme");
+      if (currentTheme.value === "dark") {
+        checked.value = true;
+      } else {
+        checked.value = false;
+      }
+    });
 
     onUpdated(() => {
       if (checked.value) {
+        localStorage.setItem("theme", "dark");
         document.documentElement.setAttribute("data-theme", "dark");
       } else {
+        localStorage.setItem("theme", "light");
         document.documentElement.setAttribute("data-theme", "light");
       }
     });

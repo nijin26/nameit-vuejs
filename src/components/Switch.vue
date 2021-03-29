@@ -1,7 +1,7 @@
 <template>
   <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox">
-      <input type="checkbox" :checked="checked" :ref="toggleSwitch" />
+      <input type="checkbox" :checked="checked" />
       <div class="slider round" @click="checked = !checked"></div>
     </label>
   </div>
@@ -12,7 +12,6 @@ import { onMounted, onUpdated, ref } from "vue";
 export default {
   setup() {
     const checked = ref(false);
-    const toggleSwitch = ref(null);
     const currentTheme = ref("");
 
     onMounted(() => {
@@ -34,7 +33,7 @@ export default {
       }
     });
 
-    return { checked, toggleSwitch };
+    return { checked };
   },
 };
 </script>
